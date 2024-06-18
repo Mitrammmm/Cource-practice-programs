@@ -39,7 +39,7 @@ void displayrec(Node* head){     //tc O(n)   sc O(n)
     displayrec(head->next);
 }
 
-void revdisplay(Node* head){
+void revdisplay(Node* head){    //O(n) space due to recursion
     if(head == NULL) return;
     revdisplay(head->next);
     cout<<head->val<<" ";
