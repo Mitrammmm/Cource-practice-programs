@@ -28,7 +28,7 @@ int main(){
     //method 2 using stack!!! tc-O(2n) sc-O(0)
     stack<int> st;
     nge[n-1] = -1;
-    st.push(nge[n-1]);
+    st.push(arr[n-1]);
 
     for(int i=n-2;i>=0;i--){   //pop ans push
         while(st.size()>0 && st.top()<=arr[i]) st.pop();
