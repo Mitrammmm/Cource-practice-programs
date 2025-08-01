@@ -24,7 +24,8 @@ void display(Node* head){     //tc O(n)   sc O(1)
 }
 
 void size(Node* head){
-    Node* temp = head;
+    Node* temp = head;  //No new node is created. nce (or pointer) to the same node as head 
+                        //It’s like saying: "Give me another name to access this node."
     int count = 0;
     while(temp != NULL){
         count++;
