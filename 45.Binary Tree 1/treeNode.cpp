@@ -14,12 +14,13 @@ public:
     }
 };
 
-void displayTree(Node* root){
+void displayTree(Node* root){     //preorder
     if(root == NULL) return;
     cout<<root->val<<" ";
     displayTree(root->left);
-    // cout<<" ";
+    // cout<<" ";                //inorder
     displayTree(root->right);
+    //cout<<                    //postorder
 }
 
 // int  sum(Node* root){
