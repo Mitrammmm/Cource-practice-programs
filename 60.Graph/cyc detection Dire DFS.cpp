@@ -11,7 +11,8 @@ bool isCyclicDFS(int node, unordered_map<int, bool> &visited, unordered_map<int,
         if (!visited[neighbor]) {
             if (isCyclicDFS(neighbor, visited, dfsVisited, adjList))
                 return true;
-        } else if (dfsVisited[neighbor]) {
+        }
+        else if (dfsVisited[neighbor]) {
             // Node already in current recursion stack → cycle found
             return true;
         }

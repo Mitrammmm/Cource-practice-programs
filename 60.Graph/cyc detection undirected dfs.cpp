@@ -11,7 +11,8 @@ bool isCyclicDFS(int node, int parent, unordered_map<int, bool> &visited, unorde
             if (isCyclicDFS(neighbor, node, visited, adjList)) {
                 return true;
             }
-        } else if (neighbor != parent) {
+        } 
+        else if (neighbor != parent) {
             return true; // visited neighbor not equal to parent means cycle
         }
     }
