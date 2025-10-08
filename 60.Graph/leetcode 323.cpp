@@ -10,7 +10,7 @@ public:
         }
     }
 
-    int countComponents(int n, vector<vector<int>>& edges){
+    int countComponents(int n, vector<vector<int>>& edges){            //O(v+e) final TC
         vector<vector<int>> adj(n);
         for(auto e :edges){
             adj[e[0]].push_back(adj[e[1]]);

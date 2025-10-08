@@ -10,8 +10,8 @@ void bfs(int start, vector<vector<int>>& adj, vector<bool>& visited) {
 
         for(int neighbor : adj[node]){   //adjacency list 
             if(!visited[neighbor]){
-                visited[neighbor] = true;
                 q.push(neighbor);
+                visited[neighbor] = true;
             }
         }
     }
