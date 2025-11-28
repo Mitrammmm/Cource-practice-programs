@@ -8,7 +8,7 @@ void dijkstra(int start, int V, vector<vector<pair<int,int>>>& adj) {
     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
 
     dist[start] = 0;
-    pq.push({0, start});
+    pq.push({0, start});  // {dis,node}
 
     while (!pq.empty()) {
         int d = pq.top().first;

@@ -1,4 +1,4 @@
-#include<iostream>
+0#include<iostream>
 using namespace std;
 
 class Node{    //user defined data type
