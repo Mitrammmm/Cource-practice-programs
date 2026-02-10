@@ -6,7 +6,7 @@ int main(){
     // int arr[] = {1,5,3,2,99,4};
     int arr[] = {1,5,3,2,6,4};
     int n= sizeof(arr)/sizeof(arr[0]);
-    //cycle sort
+    //cycle sort                // here sorting ele in O(n) TC   
     int i=0;
     while(i<n){
         int corridx = arr[i]-1; //index 0 se start h

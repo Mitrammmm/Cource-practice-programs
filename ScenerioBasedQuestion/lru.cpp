@@ -1,6 +1,6 @@
-#include <bits/stdc++.h>
+// #include<bits/stdc++.h>
 #include <iostream>
-#include <unordered_map>
+#include<unordered_map>
 class LRUCache {
 public:
     class Node{
@@ -65,21 +65,21 @@ public:
     }
 
     void put(int key, int value) {
-    if(mp.find(key) != mp.end()){
-        Node* refnode = mp[key];
-        deleteNode(refnode);
-        mp.erase(key);
-    }
+        if(mp.find(key) != mp.end()){
+            Node* refnode = mp[key];
+            deleteNode(refnode);
+            mp.erase(key);
+        }
 
-    if(mp.size() == size){
-        Node* lastNode = tail->prev;
-        deleteNode(lastNode);
-        mp.erase(lastNode->key);
-    }
+        if(mp.size() == size){
+            Node* lastNode = tail->prev;
+            deleteNode(lastNode);
+            mp.erase(lastNode->key);
+        }
 
-    Node* newNode = new Node(key, value);
-    insertAfterHead(newNode);
-    mp[key] = newNode;
+        Node* newNode = new Node(key, value);
+        insertAfterHead(newNode);
+        mp[key] = newNode;
     }
     
 };

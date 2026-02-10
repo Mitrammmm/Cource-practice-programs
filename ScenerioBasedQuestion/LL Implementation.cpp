@@ -123,6 +123,12 @@ public:
         }
         cout<<"\n";
     }
+
+    void revdisplay(Node* head){    //O(n) space due to recursion     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    if(head == NULL) return;
+        revdisplay(head->next);
+        cout<<head->val<<" ";
+    }
 };
 
 int main(){

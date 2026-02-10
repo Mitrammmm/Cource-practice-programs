@@ -62,7 +62,7 @@ private:
     list<VehicleRecord> entryList;
 
     // Map stores the 'Bookmark' (iterator) for each vehicle for O(1) access
-    unordered_map<string, list<VehicleRecord>::iterator> entryMap;
+    unordered_map<string, list<VehicleRecord>::iterator> entryMap;      // m individually VehRecord b le skta hu!!
 
 public:
     // 1. Log Entry: Records or updates a vehicle's entry
