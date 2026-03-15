@@ -44,7 +44,7 @@ Node* construct(int arr[], int n){
 }
 
 void leftBoundary(Node* root){
-    if(root==NULL || (root->left==NULL && root->right==NULL)) return;
+    if(root==NULL || (root->left==NULL && root->right==NULL)) return;       //edge case managed line 57
 
     cout<<root->val<<" ";
     leftBoundary(root->left);
@@ -60,7 +60,7 @@ void bottomBoundary(Node* root){
 }
 
 void rightBoundary(Node* root){
-    if(root==NULL || (root->left==NULL && root->right==NULL)) return;
+    if(root==NULL || (root->left==NULL && root->right==NULL)) return;    //edge case managed line 57
 
     // cout<<root->val<<" ";     // we dont want from top t bottom
     rightBoundary(root->right);
